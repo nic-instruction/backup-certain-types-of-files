@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 # "Remove certain types of files" script. This script takes two arguments: a file extension and a target 
 directory name. The script traverses the target directory and removes all files of the specified type. By
  default, it should print the name and path of every file it removes. It should also have a 'quiet' mode 
