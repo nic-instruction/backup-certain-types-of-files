@@ -1,8 +1,10 @@
-# Week 1 - Hello World
+# Backup Certain Types of Files Script
 
-Objective: Edit the HelloWorld Java class so that it prints "Hello World".  
+Upload `final.sh` to github, remember that `final.sh` must print a usage summery if it is not run with the appropriate number of arguments.
 
-   * There are many files in this repository and we will go through what each of them does in class, but the only one you need to edit is `HelloWorld.java`.
-   * Each time you save your code in this repository a series of tests will be run against your code in a container.  To see if your code passed all the tests and is ready to submit, go to the 'Actions' tab of your repository and see if the last commit passed all the tests.  If it did, there will be a green checkmark by the last commit, otherwise there will be a red x.
-   * If you're not sure why your commit didn't pass the tests, click into the commit in the actions tab and then click 'autograding'.  You will be able to see the output of the test and use this to determine what went wrong.  If you need help, post on Slack!
+Do not upload your script until it is 100% complete and passes all of your personal tests.  This is a verification environment, not a testing environment, if you have questions, please let me know!
+
+
+## Specifications
+This script takes three arguments: a file extension, an origin directory, and a destination directory. It recursively searches the origin directory for files with the specified file extension and backs them up to the destination directory. I recommend using the Linux find command with the -exec option to accomplish the meat of this functionality in your script.
   
