@@ -14,7 +14,8 @@ then
         "
 fi
 fileExtension="$1"
-targetDir="$2"
+targetDir="$3"
+backupDir="$2"
 echo "file extension is: $fileExtension"
 echo "target dir is: $targetDir"
 # figure out how the user can tell me if they want quiet mode or normal mode
@@ -27,4 +28,4 @@ then
 fi
 
 
-find . -name "*$fileExtension" -exec cp {} "$targetDir"  \;
+find "$backupDir" -name "*$fileExtension" -exec cp {} "$targetDir"  \;
