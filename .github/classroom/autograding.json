@@ -1,44 +1,34 @@
 {
   "tests": [
-      {
-      "name": "Set up Java 12",
-      "setup": "",
-      "run": "sudo update-java-alternatives -s adoptopenjdk-12-hotspot-amd64",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 1,
-      "points": null
-    },
     {
-      "name": "Java Version",
+      "name": "Does it pring a usage statement when run without arguments?",
       "setup": "",
-      "run": "java -version",
+      "run": "bash final.sh",
       "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 1,
-      "points": null
-    },
-    {
-      "name": "Hello World - Does it run without Error?",
-      "setup": "javac HelloWorld.java",
-      "run": "java HelloWorld",
-      "input": "",
-      "output": "",
+      "output": "Usage",
       "comparison": "included",
       "timeout": 10,
-      "points": null
+      "points": 20
     },
     {
-      "name": "Hello World - Does the I/O match?",
-      "setup": "javac HelloWorld.java",
-      "run": "java HelloWorld",
+      "name": "Test One: backing up files",
+      "setup": "touch test1.test; touch test2.test; bash final.sh .test . /tmp ",
+      "run": "ls /tmp",
       "input": "",
-      "output": "Hello World",
+      "output": "test1.test",
       "comparison": "included",
       "timeout": 1,
-      "points": 10
+      "points": 40
+    }
+    {
+      "name": "Test Two: backing up files",
+      "setup": "touch test1.mp3; touch test2.mp3; bash final.sh .mp3 . /tmp ",
+      "run": "ls /tmp",
+      "input": "",
+      "output": ".mp3",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 40
     }
   ]
 }
