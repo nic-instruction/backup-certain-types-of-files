@@ -14,7 +14,7 @@ then
         "
 fi
 fileExtension="$1"
-targetDir="$3"
+targetDir="$2"
 echo "file extension is: $fileExtension"
 echo "target dir is: $targetDir"
 # figure out how the user can tell me if they want quiet mode or normal mode
