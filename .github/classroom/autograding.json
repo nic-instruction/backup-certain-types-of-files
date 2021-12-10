@@ -12,7 +12,7 @@
     },
     {
       "name": "Test One: removing files",
-      "setup": "touch test1.testtt; touch test2.testtt; bash final.sh .testtt . ",
+      "setup": "touch test1.testtt; touch test2.testtt; bash final.sh .testtt .",
       "run": "ls | grep -c *.testtt",
       "input": "",
       "output": "0",
