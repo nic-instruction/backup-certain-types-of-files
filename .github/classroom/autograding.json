@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Does it pring a usage statement when run without arguments?",
+      "name": "Does it print a usage statement when run without arguments?",
       "setup": "",
       "run": "bash final.sh",
       "input": "",
@@ -11,21 +11,21 @@
       "points": 20
     },
     {
-      "name": "Test One: backing up files",
-      "setup": "touch test1.test; touch test2.test; bash final.sh .test . /tmp ",
-      "run": "ls /tmp",
+      "name": "Test One: removing files",
+      "setup": "touch test1.testtt; touch test2.testtt; bash final.sh .testtt . ",
+      "run": "ls . | grep -c '.testtt' ",
       "input": "",
-      "output": "test1.test",
-      "comparison": "included",
+      "output": "",
+      "comparison": "0",
       "timeout": 1,
       "points": 40
     },
     {
       "name": "Test Two: backing up files",
-      "setup": "touch test1.mp3; touch test2.mp3; bash final.sh .mp3 . /tmp ",
-      "run": "ls /tmp",
+      "setup": "touch test1.mp3; touch test2.mp3; bash final.sh .mp3 .",
+      "run": "ls . | grep -c '.mp3' ",
       "input": "",
-      "output": ".mp3",
+      "output": "",
       "comparison": "included",
       "timeout": 1,
       "points": 40
