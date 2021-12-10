@@ -13,9 +13,9 @@
     {
       "name": "Test One: removing files",
       "setup": "touch test1.testtt; touch test2.testtt; bash final.sh .testtt . ",
-      "run": "ls *.testtt | grep 'No such file or directory'",
+      "run": "ls | grep -c *.testtt",
       "input": "",
-      "output": "No such file or directory",
+      "output": "0",
       "comparison": "included",
       "timeout": 1,
       "points": 40
@@ -23,9 +23,9 @@
     {
       "name": "Test Two: backing up files",
       "setup": "touch test1.mp3; touch test2.mp3; bash final.sh .mp3 .",
-      "run": "ls *.mp3 | grep 'No such file or directory'",
+      "run": "ls | grep -c *.mp3",
       "input": "",
-      "output": "No such file or directory",
+      "output": "0",
       "comparison": "included",
       "timeout": 1,
       "points": 40
