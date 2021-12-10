@@ -1,4 +1,4 @@
-# Backup Certain Types of Files Script
+# Remove certain types of files
 
 Upload `final.sh` to github, remember that `final.sh` must print a usage summery if it is not run with the appropriate number of arguments.
 
@@ -6,5 +6,4 @@ Do not upload your script until it is 100% complete and passes all of your perso
 
 
 ## Specifications
-This script takes three arguments: a file extension, an origin directory, and a destination directory. It recursively searches the origin directory for files with the specified file extension and backs them up to the destination directory. I recommend using the Linux find command with the -exec option to accomplish the meat of this functionality in your script.
-  
+"Remove certain types of files" script. This script takes two arguments: a file extension and a target directory name. The script traverses the target directory and removes all files of the specified type. 
