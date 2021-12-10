@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ -e test1.testtt ] || [ -e test1.mp3 ]]
+if [ -e test1.testtt ] || [ -e test1.mp3 ]
 then
      echo "the script did not delete the files"
      exit 0;
