@@ -1,2 +1,1 @@
-javac HelloWorld.java
-java HelloWorld
+bash final.sh
