@@ -8,6 +8,7 @@ then
         Example: script -q .dump /backup # This option will produce no output.
         This script is used to remove all files of a certain type from a specified directory
         "
+        exit 0;
 fi
 fileExtension="$1"
 targetDir="$2"
