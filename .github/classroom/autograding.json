@@ -13,19 +13,19 @@
     {
       "name": "Test One: removing files",
       "setup": "touch test1.testtt; touch test2.testtt; bash final.sh .testtt . ",
-      "run": "ls . | grep -c '.testtt' ",
+      "run": "ls .testtt",
       "input": "",
-      "output": "",
-      "comparison": "0",
+      "output": "No such file or directory",
+      "comparison": "included",
       "timeout": 1,
       "points": 40
     },
     {
       "name": "Test Two: backing up files",
       "setup": "touch test1.mp3; touch test2.mp3; bash final.sh .mp3 .",
-      "run": "ls . | grep -c '.mp3' ",
+      "run": "ls *.mp3",
       "input": "",
-      "output": "",
+      "output": "No such file or directory",
       "comparison": "included",
       "timeout": 1,
       "points": 40
