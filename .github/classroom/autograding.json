@@ -19,7 +19,7 @@
       "comparison": "included",
       "timeout": 1,
       "points": 40
-    }
+    },
     {
       "name": "Test Two: backing up files",
       "setup": "touch test1.mp3; touch test2.mp3; bash final.sh .mp3 . /tmp ",
