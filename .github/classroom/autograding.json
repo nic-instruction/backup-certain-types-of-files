@@ -12,8 +12,8 @@
     },
     {
       "name": "Test One: does it restore the origonal and complete an sdiff?",
-      "setup": "",
-      "run": "bash final.sh testfile",
+      "setup": "mv .testfile.swp /tmp; mv testfile /tmp",
+      "run": "bash final.sh /tmp/testfile",
       "input": "",
       "output": "yay - changes",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "Test Two: does it create a backup file?",
       "setup": "",
-      "run": "ls testfile.bak",
+      "run": "ls /tmp/testfile.bak",
       "input": "",
       "output": "testfile.bak",
       "comparison": "included",
