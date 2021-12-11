@@ -13,7 +13,7 @@
     {
       "name": "Test One: does it restore the origonal and complete an sdiff?",
       "setup": "",
-      "run": "bash final.sh",
+      "run": "bash final.sh testfile",
       "input": "",
       "output": "yay - changes",
       "comparison": "included",
