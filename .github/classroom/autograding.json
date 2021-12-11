@@ -11,21 +11,21 @@
       "points": 20
     },
     {
-      "name": "Test One: removing files",
-      "setup": "touch test1.testtt; touch test2.testtt; bash final.sh .testtt .",
-      "run": "bash search.sh",
+      "name": "Test One: does it restore the origonal and complete an sdiff?",
+      "setup": "",
+      "run": "bash final.sh",
       "input": "",
-      "output": "sucess!  the script deleted the files!",
+      "output": "yay - changes",
       "comparison": "included",
       "timeout": 20,
       "points": 40
     },
     {
-      "name": "Test Two: backing up files",
-      "setup": "touch test1.mp3; touch test2.mp3; bash final.sh .mp3 .",
-      "run": "bash search.sh",
+      "name": "Test Two: does it create a backup file?",
+      "setup": "",
+      "run": "ls testfile.bak",
       "input": "",
-      "output": "sucess!  the script deleted the files!",
+      "output": "testfile.bak",
       "comparison": "included",
       "timeout": 20,
       "points": 40
