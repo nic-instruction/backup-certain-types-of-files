@@ -8,4 +8,4 @@ fi
 
 filename="$1"
 
-vim -u NONE -r .$filename.swp -c "w $filename" -c q
+vim -u NONE -r .$filename.swp -c "w $filename!" -c q
