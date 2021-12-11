@@ -17,3 +17,4 @@ tempfile="$finddir/.$tempfile.swp"
 vim -u NONE -r "$tempfile" -c 'w! '"$filename"'' -c 'wq!'
 
 sdiff $filename $filename.bak
+exit 0;
