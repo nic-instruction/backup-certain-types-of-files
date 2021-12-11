@@ -9,6 +9,11 @@ fi
 filename="$1"
 cp $filename $filename.bak
 
-vim -u NONE -r "$filename".swp -c 'w! '"$filename"'' -c 'wq!'
+finddir=$(dirname $filename)
+
+tempfile=$(basename $filename)
+tempfile="$finddir.$tempfile.swp"
+
+vim -u NONE -r "$tempfile" -c 'w! '"$filename"'' -c 'wq!'
 
 sdiff $filename $filename.bak
