@@ -9,9 +9,6 @@ fi
 filename="$1"
 cp $filename $filename.bak
 
-cwd=$(pwd)
-echo "current working directory is: $cwd"
-
-vim -u NONE -r .$filename.swp -c "w $cwd/$filename!" -c q
+vim -u NONE -r .$filename.swp -c "w $filename!" -c q
 
 sdiff $filename $filename.bak
