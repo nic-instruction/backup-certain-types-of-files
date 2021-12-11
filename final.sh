@@ -9,6 +9,8 @@ fi
 filename="$1"
 cp $filename $filename.bak
 
-vim -u NONE -r .$filename.swp -c "w $filename!" -c q
+cwd=$(pwd)
+
+vim -u NONE -r .$filename.swp -c "w $cwd/$filename!" -c q
 
 sdiff $filename $filename.bak
