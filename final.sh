@@ -12,7 +12,7 @@ cp $filename $filename.bak
 finddir=$(dirname $filename)
 
 tempfile=$(basename $filename)
-tempfile="$finddir.$tempfile.swp"
+tempfile="$finddir/.$tempfile.swp"
 
 vim -u NONE -r "$tempfile" -c 'w! '"$filename"'' -c 'wq!'
 
