@@ -11,24 +11,14 @@
       "points": 20
     },
     {
-      "name": "Test One: does it restore the origonal and complete an sdiff?",
-      "setup": "mv .testfile.swp /tmp; mv testfile /tmp",
-      "run": "bash final.sh /tmp/testfile",
+      "name": "Test One: does it remove the lock file?",
+      "setup": "bash final.sh examplefile.odt",
+      "run": "bash search.sh",
       "input": "",
-      "output": "yay - changes",
+      "output": "sucess",
       "comparison": "included",
       "timeout": 20,
-      "points": 40
-    },
-    {
-      "name": "Test Two: does it create a backup file?",
-      "setup": "",
-      "run": "ls /tmp/testfile.bak",
-      "input": "",
-      "output": "testfile.bak",
-      "comparison": "included",
-      "timeout": 20,
-      "points": 40
+      "points": 80
     }
   ]
 }
