@@ -12,7 +12,7 @@
     },
     {
       "name": "Test One: does it remove the lock file?",
-      "setup": "bash final.sh examplefile.odt",
+      "setup": "bash final.sh example_file.odt",
       "run": "bash search.sh",
       "input": "",
       "output": "sucess",
